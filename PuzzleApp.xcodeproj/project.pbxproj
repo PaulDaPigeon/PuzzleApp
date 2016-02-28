@@ -339,7 +339,7 @@
 			baseConfigurationReference = 31AEC0E2448E67A36822F5D4 /* Pods-PuzzleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Some Dude (KYXQXCWE3G)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Some Dude (9NS44DLTN7)";
 				INFOPLIST_FILE = PuzzleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebokpal.PuzzleApp;
@@ -353,7 +353,7 @@
 			baseConfigurationReference = 3F3B7839E83DFFFF1DCF590A /* Pods-PuzzleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Some Dude (KYXQXCWE3G)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Some Dude (9NS44DLTN7)";
 				INFOPLIST_FILE = PuzzleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebokpal.PuzzleApp;
