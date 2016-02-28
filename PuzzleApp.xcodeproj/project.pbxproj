@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30B1EBAF0EFF85FBA1E9B8EA /* libPods-PuzzleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B19AEFC4A8508878C2CD3A2 /* libPods-PuzzleApp.a */; };
 		5112C7EA1C834BF3004F3092 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112C7E91C834BF3004F3092 /* main.m */; };
 		5112C7ED1C834BF3004F3092 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112C7EC1C834BF3004F3092 /* AppDelegate.m */; };
 		5112C7F01C834BF3004F3092 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112C7EF1C834BF3004F3092 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31AEC0E2448E67A36822F5D4 /* Pods-PuzzleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuzzleApp/Pods-PuzzleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3F3B7839E83DFFFF1DCF590A /* Pods-PuzzleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuzzleApp/Pods-PuzzleApp.release.xcconfig"; sourceTree = "<group>"; };
 		5112C7E51C834BF3004F3092 /* PuzzleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5112C7E91C834BF3004F3092 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5112C7EB1C834BF3004F3092 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		5112C7F41C834BF3004F3092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5112C7F71C834BF3004F3092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5112C7F91C834BF3004F3092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B19AEFC4A8508878C2CD3A2 /* libPods-PuzzleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PuzzleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B1EBAF0EFF85FBA1E9B8EA /* libPods-PuzzleApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				5112C7E71C834BF3004F3092 /* PuzzleApp */,
 				5112C7E61C834BF3004F3092 /* Products */,
+				B306B5D569FB7F7B9582C0FF /* Pods */,
+				D9EDB6CF2C37111068D7D080 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B306B5D569FB7F7B9582C0FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31AEC0E2448E67A36822F5D4 /* Pods-PuzzleApp.debug.xcconfig */,
+				3F3B7839E83DFFFF1DCF590A /* Pods-PuzzleApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9EDB6CF2C37111068D7D080 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B19AEFC4A8508878C2CD3A2 /* libPods-PuzzleApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5112C7FC1C834BF3004F3092 /* Build configuration list for PBXNativeTarget "PuzzleApp" */;
 			buildPhases = (
+				9C8BBC0BD47295FFF9533F9C /* Check Pods Manifest.lock */,
 				5112C7E11C834BF3004F3092 /* Sources */,
 				5112C7E21C834BF3004F3092 /* Frameworks */,
 				5112C7E31C834BF3004F3092 /* Resources */,
+				02F5ABE7EEA3AA571A4CA4E5 /* Embed Pods Frameworks */,
+				F3AEF35846B59B1E57B76185 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02F5ABE7EEA3AA571A4CA4E5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuzzleApp/Pods-PuzzleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C8BBC0BD47295FFF9533F9C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3AEF35846B59B1E57B76185 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuzzleApp/Pods-PuzzleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5112C7E11C834BF3004F3092 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		5112C7FD1C834BF3004F3092 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AEC0E2448E67A36822F5D4 /* Pods-PuzzleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PuzzleApp/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		5112C7FE1C834BF3004F3092 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3B7839E83DFFFF1DCF590A /* Pods-PuzzleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PuzzleApp/Info.plist;
@@ -300,6 +377,7 @@
 				5112C7FE1C834BF3004F3092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
