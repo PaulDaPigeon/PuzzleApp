@@ -41,9 +41,16 @@ static const CGFloat PuzzlePieceSnappingTolerance = 10.0f;
         for (NSInteger column = 0; column < 3; column++) {
             CGFloat interimSpacing = 20.0f;
             UIView *puzzlePiece = [[UIView alloc] initWithFrame:CGRectMake((70 + (row * (PuzzlePieceWidth + interimSpacing))), (100 + (column * (PuzzlePieceHeight + interimSpacing))), PuzzlePieceWidth, PuzzlePieceHeight)];
+            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, PuzzlePieceWidth, PuzzlePieceHeight)];
+            label.text = [NSString stringWithFormat:@"%li", ((3 * column) + row + 1)];
+            label.textAlignment = NSTextAlignmentCenter;
+            label.textColor = [UIColor whiteColor];
+            label.font = [UIFont systemFontOfSize:28];
+            label.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
             puzzlePiece.backgroundColor = [UIColor greenColor];
             puzzlePiece.tag = row;
             [puzzlePiece enableDragging];
+            [puzzlePiece addSubview:label];
             puzzlePiece.cagingArea = self.view.frame;
             __weak UIView *weakPuzzlePiece = puzzlePiece;
             puzzlePiece.draggingEndedBlock = ^{
