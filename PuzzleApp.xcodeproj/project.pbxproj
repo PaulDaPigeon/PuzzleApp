@@ -344,6 +344,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebokpal.PuzzleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9241b53e-e6e8-45d4-9a32-17b1620e3c9a";
 			};
 			name = Debug;
 		};
@@ -357,6 +358,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebokpal.PuzzleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9241b53e-e6e8-45d4-9a32-17b1620e3c9a";
 			};
 			name = Release;
 		};
