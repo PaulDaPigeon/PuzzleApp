@@ -14,6 +14,7 @@
 		5112C7F31C834BF3004F3092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5112C7F11C834BF3004F3092 /* Main.storyboard */; };
 		5112C7F51C834BF3004F3092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5112C7F41C834BF3004F3092 /* Assets.xcassets */; };
 		5112C7F81C834BF3004F3092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5112C7F61C834BF3004F3092 /* LaunchScreen.storyboard */; };
+		517558E91C9ED7570035021E /* PuzzleGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 517558E81C9ED7570035021E /* PuzzleGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		5112C7F41C834BF3004F3092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5112C7F71C834BF3004F3092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5112C7F91C834BF3004F3092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517558E71C9ED7570035021E /* PuzzleGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleGenerator.h; sourceTree = "<group>"; };
+		517558E81C9ED7570035021E /* PuzzleGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleGenerator.m; sourceTree = "<group>"; };
 		8B19AEFC4A8508878C2CD3A2 /* libPods-PuzzleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PuzzleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,6 +72,8 @@
 				5112C7EC1C834BF3004F3092 /* AppDelegate.m */,
 				5112C7EE1C834BF3004F3092 /* ViewController.h */,
 				5112C7EF1C834BF3004F3092 /* ViewController.m */,
+				517558E71C9ED7570035021E /* PuzzleGenerator.h */,
+				517558E81C9ED7570035021E /* PuzzleGenerator.m */,
 				5112C7F11C834BF3004F3092 /* Main.storyboard */,
 				5112C7F41C834BF3004F3092 /* Assets.xcassets */,
 				5112C7F61C834BF3004F3092 /* LaunchScreen.storyboard */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5112C7F01C834BF3004F3092 /* ViewController.m in Sources */,
+				517558E91C9ED7570035021E /* PuzzleGenerator.m in Sources */,
 				5112C7ED1C834BF3004F3092 /* AppDelegate.m in Sources */,
 				5112C7EA1C834BF3004F3092 /* main.m in Sources */,
 			);
