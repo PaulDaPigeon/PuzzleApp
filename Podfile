@@ -4,8 +4,5 @@
 # use_frameworks!
 
 target 'PuzzleApp' do
-
-pod 'UIView+draggable'
-
+pod 'MagicalRecord'
 end
-
