@@ -110,7 +110,7 @@ typedef NS_ENUM(NSUInteger, Position) {
                 case PositionBottom: {
                     if ((rows + coloumn) % 2 == 0) {
                         maskImage = [UIImage imageNamed:@"Side2"];
-                        positionModifier = CGPointMake(-32, -9);
+                        positionModifier = CGPointMake(-9, -32);
                     }
                     else {
                         maskImage = [UIImage imageNamed:@"Side1"];
@@ -130,7 +130,7 @@ typedef NS_ENUM(NSUInteger, Position) {
                         maskImage = [UIImage imageNamed:@"Side2"];
                     }
                     else {
-                        maskImage = [UIImage imageNamed:@"Side2"];
+                        maskImage = [UIImage imageNamed:@"Side1"];
                     }
                     positionModifier = CGPointMake(0, -9);
                     maskImage = [PuzzleGenerator rotateimage:maskImage toOrientation:UIImageOrientationLeft];
@@ -151,7 +151,7 @@ typedef NS_ENUM(NSUInteger, Position) {
             CALayer *layerMask = [CALayer layer];
             layerMask.contents = (id)maskImage.CGImage;
             layerMask.frame = CGRectMake(0, 0, maskImage.size.width, maskImage.size.height);
-            UIImageView *piece = [[UIImageView alloc] initWithFrame:CGRectMake(positionModifier.x, positionModifier.y, maskImage.size.width, maskImage.size.height)];
+            UIImageView *piece = [[UIImageView alloc] initWithFrame:CGRectMake(positionModifier.x * xRatio, positionModifier.y * yRatio, maskImage.size.width, maskImage.size.height)];
             piece.backgroundColor = [UIColor greenColor];
             piece.tag = coloumn;
             piece.layer.mask = layerMask;
